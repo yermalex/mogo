@@ -17,6 +17,15 @@ h1, h2, h3, h4, h5, h6 {
    margin: 0;
 }
 
+hr {
+   display: block;
+   width: 100%;
+   height: 1px;
+   margin: 40px 0;
+
+   border: 0;
+   background-color: #e5e5e5;
+}
 
 /* Container
 =========================================== */
@@ -236,10 +245,18 @@ h1, h2, h3, h4, h5, h6 {
    padding: 80px 0; 
 }
 
+.section--devices {
+   padding-bottom: 0;
+
+   background: url("../images/feature/bg.jpg") center no-repeat;
+   -webkit-background-size: cover;
+   background-size: cover;
+}
+
 .section__header {
    width: 100%;
    max-width: 950px;
-   margin: 0 auto 40px;
+   margin: 0 auto 50px;
 
    text-align: center;
 }
@@ -275,7 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Section
+/* About
 =========================================== */
 .about {
    margin-top: 80px;
@@ -366,7 +383,7 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: 700;
    line-height: 1;
 
-   transition: text-shadow .4s linear, transform .2s linear;
+   transition: text-shadow .2s linear, transform .2s linear;
 }
 
 .stat__item:hover .stat__count{
@@ -385,6 +402,68 @@ h1, h2, h3, h4, h5, h6 {
    font-size: 14px;
    text-transform: uppercase;
 }
+
+
+/* Services
+=========================================== */
+.services {
+   display: flex;
+}
+
+.services__item {
+   flex: 1 1 0;
+   padding-left: 85px;
+   padding-right: 35px;
+   position: relative;
+}
+
+.services__icon {
+   position: absolute;
+   top: 0;
+   left: 27px;
+   z-index: 1;
+}
+
+.services__title {
+   margin-bottom: 10px;
+
+   font-size: 14px;
+   color: #333333;
+   text-transform: uppercase;
+}
+
+.services__text {
+   font-size: 15px;
+   color: #999999;
+}
+
+
+/* Devices
+=========================================== */
+.devices {
+   width: 100%;
+   max-width: 600px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.devices__item {
+   display: block;
+}
+
+.devices__item--iphone {
+   position: absolute;
+   bottom: -80px;
+   right: -80px;
+   z-index: 1;
+}
+
+
+
+
+
+
+
 
 
 
