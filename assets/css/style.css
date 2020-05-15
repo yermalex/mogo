@@ -296,45 +296,47 @@ hr {
 }
 
 
-/* About
+/* Card
 =========================================== */
-.about {
+.card {
    margin-top: 80px;
    display: flex;
    justify-content: space-between;
 }
 
-.about__item {
+.card__item {
    width: 380px;
-   position: relative;
+}
 
+.card__inner {
+   position: relative;
    background-color: #95e1d3;
 }
 
-.about__item:hover .about__img {
+.card__inner:hover .card__img {
    transform: translate3d(-10px, -10px, 0);
 }
 
-.about__item:hover .about__img img {
+.card__inner:hover .card__img img {
    opacity: 0.2;
 }
 
-.about__item:hover .about__text {
+.card__inner:hover .card__text {
    opacity: 1;
 }
 
-.about__img {
+.card__img {
    background: linear-gradient(to bottom, #f38181, #fce38a);
 
    transition: transform .2s linear;
 }
 
-.about__img img {
+.card__img img {
    display: block;
    transition: opacity .2s linear;
 }
 
-.about__text {
+.card__text {
    width: 100%;
 
    font-size: 18px;
@@ -353,6 +355,27 @@ hr {
    transition: opacity .2s linear;
 }
 
+.card__info {
+   padding: 15px 0 10px;
+
+   text-align: center;   
+}
+
+.card__name {
+   margin-bottom: 5px;
+
+   font-size: 14px;
+   font-weight: 700;
+   color: #333333;
+   text-transform: uppercase;
+}
+
+.card__prof {
+   font-size: 15px;
+   font-style: italic;
+   font-weight: 300;
+   color: #999;
+}
 
 /* Statistics
 =========================================== */
@@ -625,3 +648,57 @@ hr {
    right: 0;
    transform: rotate(135deg);
 }
+
+
+/* Social
+=========================================== */
+.social {
+   display: flex;
+   justify-content: center;
+}
+
+.social__item {
+   width: 55px;
+   height: 55px;
+   padding: 12px 10px;
+
+   background-color: #fce38a;
+   border-right: 1px solid #f38181;
+
+   font-size: 30px;
+   text-decoration: none;
+   color: #f38181;
+   line-height: 1;
+
+   transition: .1s;
+}
+
+.social__item:last-child {
+   border-right: none;
+}
+
+.social__item:hover {
+   background-color: #f38181;
+
+   color: #fff;
+}
+
+
+/* Logos
+=========================================== */
+.logos {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logos__item {
+   transition: .2s;
+}
+.logos__item:hover {
+   filter: drop-shadow(0 0 10px #b3b3b3);
+}
+
+
+
+
+
